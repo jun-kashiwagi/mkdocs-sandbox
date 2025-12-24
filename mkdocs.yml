@@ -1,0 +1,3 @@
+site_name: 私のドキュメントテスト
+theme:
+  name: material  # 人気の「Material for MkDocs」を使用
