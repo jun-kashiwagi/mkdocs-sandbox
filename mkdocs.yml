@@ -1,3 +1,22 @@
 site_name: 私のドキュメントテスト
 theme:
   name: material  # 人気の「Material for MkDocs」を使用
+  palette:
+    # ダークモード切り替えスイッチ
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs  # 上部にタブメニューを表示
+    - search.suggest   # 検索候補の表示
