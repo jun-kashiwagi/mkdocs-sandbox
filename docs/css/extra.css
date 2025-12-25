@@ -1,0 +1,11 @@
+/* Mermaid図がはみ出た場合に横スクロールを出す */
+.mermaid {
+    overflow-x: auto;
+    background-color: white; /* 背景を白にすると見やすい */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.mermaid svg {
+    max-width: none !important; /* 強制縮小を解除 */
+}

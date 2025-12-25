@@ -1,6 +1,7 @@
 site_name: 私のドキュメントテスト
 theme:
-  name: material  # 人気の「Material for MkDocs」を使用
+  name: material
+  language: ja
   palette:
     # ダークモード切り替えスイッチ
     - media: "(prefers-color-scheme: light)"
@@ -18,5 +19,46 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   features:
-    - navigation.tabs  # 上部にタブメニューを表示
-    - search.suggest   # 検索候補の表示
+    - navigation.tabs          # 上部にメインメニューを表示（ポータル感が出る）
+    - navigation.sections      # サイドバーをセクション分け
+    - navigation.top           # 「トップに戻る」ボタン
+    - search.suggest           # 検索候補を表示
+    - search.highlight         # 検索ワードをハイライト
+    - content.code.copy        # コードブロックにコピーボタンを追加
+nav:
+  - 目次: index.md
+  - 開発ガイド:
+      - はじめに: project/getting-started.md
+      - 環境構築: project/setup.md
+  - 運用ルール:
+      - セキュリティ: rules/security.md
+  - 図とグラフ: flowchart-example.md
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
+  - js/mermaid-init.js
+extra_css:
+  - css/extra.css
+plugins:
+  - search
+  - glightbox:
+      touch-navigation:
+      enabled: true
+      touchNavigation: true
+      loop: false
+      zoomable: true
+      draggable: true
