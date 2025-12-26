@@ -39,6 +39,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -49,11 +50,11 @@ markdown_extensions:
       alternate_style: true
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
-  - js/mermaid-init.js
 extra_css:
   - css/extra.css
 plugins:
   - search
+  - mermaid-zoom
   - glightbox:
       touch-navigation:
       enabled: true
