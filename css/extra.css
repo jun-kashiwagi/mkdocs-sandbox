@@ -1,0 +1,94 @@
+:root, [data-md-color-scheme=default] {
+    --md-default-fg-color--light: rgb(59, 130, 246);
+}
+
+/* Mermaid図のスタイル */
+.mermaid {
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1em auto;
+}
+
+.mermaid svg {
+    width: auto;
+    height: auto;
+    display: block;
+    margin-inline: auto;
+}
+/* Lightboxが有効なMermaidのスタイル */
+.mermaid.lightbox-enabled {
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.mermaid.lightbox-enabled:hover {
+    opacity: 0.9;
+}
+
+.mermaid.lightbox-enabled::after {
+    content: '🔍 クリックで拡大';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.mermaid.lightbox-enabled:hover::after {
+    opacity: 1;
+}
+
+/* コンテンツ全体の最大幅を広げる */
+.md-grid {
+    max-width: 90%; /* または 1600px など具体的な数値 */
+}
+
+/* 左右のサイドバーを含めた全体幅の調整 */
+.md-container {
+    max-width: 100%;
+}
+
+/* ヘッダーロゴのスタイル調整（背景色を追加して見やすくする） */
+.md-header__button.md-logo {
+    background-color: white;
+    padding: 4px 8px;
+    margin-right: 8px;
+}
+
+.md-header__button img {
+    height: 2rem;
+    width: auto;
+}
+
+/* ナビゲーションの見出しの文字色を青に */
+.md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link:not(.md-nav__container){
+    color: rgb(59, 130, 246);
+    font-size: larger;
+}
+
+/* ナビゲーションの親項目（リンクにならない見出し）の文字色を青に */
+.md-nav__item--nested > .md-nav__link:not([href]),
+.md-nav__item--nested > .md-nav__link[href="#"],
+.md-nav__item--nested > .md-nav__link[href=""],
+.md-nav__item--active > .md-nav__link {
+    color: rgb(59, 130, 246);
+    font-weight: 600;
+}
+
+/* ナビゲーションのアクティブな項目（表示中の画面）の文字色をオレンジに */
+.md-nav__link--active {
+    color: rgba(248, 136, 78, 1) !important;
+}
