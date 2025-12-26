@@ -28,11 +28,55 @@ theme:
     - content.code.copy        # コードブロックにコピーボタンを追加
 nav:
   - 目次: index.md
+  - 在庫:
+      - 在庫A: stock/在庫A.md
+      - 在庫B: stock/在庫B.md
+      - 在庫C: stock/在庫C.md
+  - 受注／売上:
+      - 受注売上一覧: order-sales/受注売上一覧.md
+      - 受注エントリー(量販＿店別): order-sales/受注エントリー(量販＿店別).md
+      - 受注エントリー(量販＿全店): order-sales/受注エントリー(量販＿全店).md
+      - 受注エントリー(商品＿店別): order-sales/受注エントリー(商品＿店別).md
+      - 受注エントリー(商品＿全店): order-sales/受注エントリー(商品＿全店).md
+      - 受注エントリー(営業): order-sales/受注エントリー(営業).md
+      - 店売り入力: order-sales/店売り入力.md
+      - 元黒なし赤伝票エントリー: order-sales/元黒なし赤伝票エントリー.md
+      - 受注入力チェックリスト: order-sales/受注入力チェックリスト.md
+      - 週間受注予定データ一覧: order-sales/週間受注予定データ一覧.md
+      - EDI処理状況: order-sales/EDI処理状況.md
+      - 仮商品コード一覧: order-sales/仮商品コード一覧.md
+      - 重複チェックエラー一覧: order-sales/重複チェックエラー一覧.md
+      - 受注データアップロード: order-sales/受注データアップロード.md
+      - 受注売上修正(店別): order-sales/受注売上修正(店別).md
+      - 受注売上修正(商品別): order-sales/受注売上修正(商品別).md
+      - 売上伝票一覧: order-sales/売上伝票一覧.md
+      - 手書き伝票一覧: order-sales/手書き伝票一覧.md
+      - 売価赤黒入力: order-sales/売価赤黒入力.md
+      - 商品カタログ: order-sales/商品カタログ.md
+      - 見積書一覧: order-sales/見積書一覧.md
+      - FAX注文用紙ダウンロード: order-sales/FAX注文用紙ダウンロード.md
+      - 商品取引変換マスタ: order-sales/商品取引変換マスタ.md
+      - 販売単価マスタ: order-sales/販売単価マスタ.md
+      - マイナス利益申請一覧: order-sales/マイナス利益申請一覧.md
+      - 得意先別データファイル: order-sales/得意先別データファイル.md
+      - 伝票発行:
+          - 出荷確定/仕分指示: order-sales/ticket-issue/出荷確定_仕分指示.md
+          - 出荷確定/仕分指示履歴: order-sales/ticket-issue/出荷確定_仕分指示履歴.md
+          - ダミーラベル発行: order-sales/ticket-issue/ダミーラベル発行.md
+          - EDI受領確認: order-sales/ticket-issue/EDI受領確認.md
+      - 帳合:
+          - 帳合一覧: order-sales/account-reconciliation/帳合一覧.md
+          - 帳合データアップロード: order-sales/account-reconciliation/帳合データアップロード.md
+  - 発注／仕入／買付申請:
+      - 発注A: purchase/発注A.md
+      - 発注B: purchase/発注B.md
+      - 発注C: purchase/発注C.md
   - 開発ガイド:
       - はじめに: project/getting-started.md
       - 環境構築: project/setup.md
   - 運用ルール:
       - セキュリティ: rules/security.md
+  - 用語集: glossary.md
 markdown_extensions:
   - admonition
   - pymdownx.details
