@@ -1,3 +1,7 @@
+:root, [data-md-color-scheme=default] {
+    --md-default-fg-color--light: rgb(59, 130, 246);
+}
+
 /* Mermaid図のスタイル */
 .mermaid {
     background-color: white;
@@ -69,16 +73,22 @@
     width: auto;
 }
 
+/* ナビゲーションの見出しの文字色を青に */
+.md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link:not(.md-nav__container){
+    color: rgb(59, 130, 246);
+    font-size: larger;
+}
+
 /* ナビゲーションの親項目（リンクにならない見出し）の文字色を青に */
 .md-nav__item--nested > .md-nav__link:not([href]),
 .md-nav__item--nested > .md-nav__link[href="#"],
-.md-nav__item--nested > .md-nav__link[href=""] {
+.md-nav__item--nested > .md-nav__link[href=""],
+.md-nav__item--active > .md-nav__link {
     color: rgb(59, 130, 246);
     font-weight: 600;
 }
 
 /* ナビゲーションのアクティブな項目（表示中の画面）の文字色をオレンジに */
-.md-nav__link--active,
-.md-nav__item--active > .md-nav__link {
+.md-nav__link--active {
     color: rgba(248, 136, 78, 1) !important;
 }
