@@ -27,6 +27,8 @@ theme:
     - search.suggest           # 検索候補を表示
     - search.highlight         # 検索ワードをハイライト
     - content.code.copy        # コードブロックにコピーボタンを追加
+    - content.action.edit      # 編集ボタン
+    - content.action.view      # ソース表示ボタン
 nav:
   - 目次: index.md
   - 在庫:
@@ -77,7 +79,8 @@ nav:
       - 環境構築: project/setup.md
   - 運用ルール:
       - セキュリティ: rules/security.md
-  - 用語集: glossary.md
+  - FAQ・用語集: faq.md
+  - スタイルガイド: style-guide.md
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -101,6 +104,10 @@ extra_css:
 plugins:
   - search
   - mermaid-zoom
+  - git-revision-date-localized:
+      enable_creation_date: true
+      enable_modification_date: true
+      locale: ja
   - glightbox:
       touch-navigation:
       enabled: true

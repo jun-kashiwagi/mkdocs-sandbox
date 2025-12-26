@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 全履歴を取得（git-revision-date-localized-plugin用）
 
       - name: Configure Python
         uses: actions/setup-python@v5
@@ -23,6 +25,7 @@ jobs:
           pip install mkdocs-material
           pip install mkdocs-glightbox
           pip install mkdocs-mermaid-zoom
+          pip install mkdocs-git-revision-date-localized-plugin
 
       - name: Build and Deploy
         run: |
