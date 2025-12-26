@@ -2,6 +2,7 @@ site_name: ドキュメントDEMO
 theme:
   name: material
   language: ja
+  logo: images/logo.png
   palette:
     # ダークモード切り替えスイッチ
     - media: "(prefers-color-scheme: light)"
