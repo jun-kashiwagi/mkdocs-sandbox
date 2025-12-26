@@ -56,3 +56,29 @@
 .md-container {
     max-width: 100%;
 }
+
+/* ヘッダーロゴのスタイル調整（背景色を追加して見やすくする） */
+.md-header__button.md-logo {
+    background-color: white;
+    padding: 4px 8px;
+    margin-right: 8px;
+}
+
+.md-header__button img {
+    height: 2rem;
+    width: auto;
+}
+
+/* ナビゲーションの親項目（リンクにならない見出し）の文字色を青に */
+.md-nav__item--nested > .md-nav__link:not([href]),
+.md-nav__item--nested > .md-nav__link[href="#"],
+.md-nav__item--nested > .md-nav__link[href=""] {
+    color: rgb(59, 130, 246);
+    font-weight: 600;
+}
+
+/* ナビゲーションのアクティブな項目（表示中の画面）の文字色をオレンジに */
+.md-nav__link--active,
+.md-nav__item--active > .md-nav__link {
+    color: rgba(248, 136, 78, 1) !important;
+}
