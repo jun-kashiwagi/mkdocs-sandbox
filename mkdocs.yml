@@ -32,7 +32,6 @@ nav:
       - 環境構築: project/setup.md
   - 運用ルール:
       - セキュリティ: rules/security.md
-  - 図とグラフ: flowchart-example.md
 markdown_extensions:
   - admonition
   - pymdownx.details

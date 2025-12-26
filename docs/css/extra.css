@@ -9,3 +9,13 @@
 .mermaid svg {
     max-width: none !important; /* 強制縮小を解除 */
 }
+
+/* コンテンツ全体の最大幅を広げる */
+.md-grid {
+    max-width: 90%; /* または 1600px など具体的な数値 */
+}
+
+/* 左右のサイドバーを含めた全体幅の調整 */
+.md-container {
+    max-width: 100%;
+}
