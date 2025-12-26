@@ -3,6 +3,7 @@ theme:
   name: material
   language: ja
   logo: images/logo.png
+  favicon: images/favicon.ico
   palette:
     # ダークモード切り替えスイッチ
     - media: "(prefers-color-scheme: light)"
